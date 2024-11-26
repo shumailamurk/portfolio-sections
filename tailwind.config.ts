@@ -1,3 +1,4 @@
+import { Container } from "postcss";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -8,9 +9,14 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+    
+      Container:{
+        center : true,
+        padding:"15px",
+      },
+      colors:{
+        accent:"#08E95E",
+      
       },
     },
   },
